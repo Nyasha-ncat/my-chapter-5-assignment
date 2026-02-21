@@ -51,3 +51,32 @@ for divisor in range(2, number_to_check):
 if is_prime:
     print(f"{number_to_check} is prime!")
 print() 
+
+# Step 3: Multiplication Table Grid
+
+# Display the title 
+print("Multiplication Table:")
+
+# Header Row
+print("    ", end="") 
+for col_header in range(1, 11):
+    # Each header number gets 4 spaces of width
+    print(f"{col_header:4}", end="")
+print() 
+
+# The outer loop represents each row (1-10)
+for row in range(1, 11):
+    
+    # Print the row number at the start, formatted to take 2 spaces
+    print(f"{row:2}", end=" ")
+    
+    # The inner loop represents each column (1-10)
+    for col in range(1, 11):
+        product = row * col
+        # Print the product with 4 spaces of width to keep columns straight
+        print(f"{product:4}", end="")
+    
+    # After finishing all columns in a row, use print() to move to the next line
+    print()
+
+print() 
