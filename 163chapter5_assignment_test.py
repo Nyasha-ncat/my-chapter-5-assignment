@@ -1,5 +1,5 @@
 """
-COMP 163 - Chapter 5 Assignment Test Suite
+COMP 163 - Chapter 5 Assignment Test Suite 
 Automated tests for Loop Mastery assignment
 
 This file contains all automated tests for the four-step loop assignment.
