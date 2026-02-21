@@ -1,9 +1,9 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/IiqXY2S6)
 # Loop Mastery Assignment
 
-**Student Name:** [Your Name]  
-**GitHub Username:** [Your Username]  
-**Date:** [Submission Date]
+**Student Name:** [Nyasha Chimombe]  
+**GitHub Username:** [Nyasha=ncat]  
+**Date:** [2/20/2026]
 
 ## Overview
 
@@ -16,10 +16,10 @@ This assignment demonstrates mastery of while loops, for loops, and nested loops
 ### Step 1: Collatz Sequence - While Loop
 
 **Why while loop?**  
-[Explain why a while loop is the best choice for this problem. Consider: Do you know how many iterations beforehand? What condition determines when to stop?]
+[A while loop is the best choice because the number of iterations needed to reach 1 is unknown at the start. It depends entirely on the path of the starting number.]
 
 **How it works:**  
-[Provide a brief explanation of your implementation. What variables did you use? How does your loop condition work?]
+[I used a "while current_number != 1: "condition. Inside, I used the modulo operator % to check if the number is even or odd, then applied the appropriate Collatz math (dividing by 2 or multiplying by 3 and adding 1).]
 
 **Example:**
 ```
@@ -33,10 +33,10 @@ Steps: 9
 ### Step 2: Prime Checker - For Loop
 
 **Why for loop?**  
-[Explain why a for loop is the best choice for this problem. Consider: Do you know the range of values to check? Is the iteration count predictable?]
+[A for loop is ideal here because we are testing a specific, known range of numbers. The iteration count is predictable and finite.]
 
 **How it works:**  
-[Provide a brief explanation of your implementation. How do you test for divisibility? What happens when you find a divisor?]
+[I used range(2, number_to_check) to iterate through all potential divisors. If number % divisor == 0 evaluates to true, the program identifies a factor, marks the number as not prime, and breaks the loop.]
 
 **Example:**
 ```
@@ -50,13 +50,13 @@ Testing divisors from 2 to 16...
 ### Step 3: Multiplication Table - Nested Loops
 
 **Why nested loops?**  
-[Explain why nested loops are necessary for this problem. What does the outer loop do? What does the inner loop do?]
+[Nested loops were needed to generate a 2D grid. The outer loop manages the rows (1-10), while the inner loop calculates every column value for that specific row before moving to the next line.]
 
 **Outer vs Inner:**  
-[Explain which loop handles rows and which handles columns, and why this organization makes sense.]
+[The outer loop handles the rows to ensure we finish one full line of products before moving down. The inner loop handles the columns to print the products side-by-side.]
 
 **How it works:**  
-[Provide a brief explanation of your implementation. How did you format the output? What techniques did you use for alignment?]
+[I used f-string alignment (:4) to ensure all products take up exactly 4 characters of space, keeping the table columns perfectly straight.]
 
 **Example:**
 ```
@@ -72,16 +72,12 @@ Multiplication Table:
 ### Step 4: Statistics Dashboard - All Three Loop Types
 
 **Why all three?**  
-[Explain why this problem requires all three loop types:]
-- **While loop:** [What part uses while and why?]
-- **For loop:** [What part uses for and why?]
-- **Nested loops:** [What part uses nested loops and why?]
+- **While loop:** [Used for data collection because we don't know how many numbers the user will enter before typing the sentinel value -1.]
+- **For loop:** [Used to calculate the statistics and to iterate through the list of stored numbers.]
+- **Nested loops:** [Used for the bar chart; the outer loop moves through each number in the list, and the inner loop prints a specific number of asterisks.]
 
 **How it works:**  
-[Provide a comprehensive explanation of your implementation:]
-- How you collect data
-- How you calculate statistics
-- How you create the bar chart
+[Numbers are collected in a list until the sentinel value -1 is hit. I then used standard logic to find the sum, average, min, and max. Finally, I printed a visual bar chart where the length of each bar matches the value of the number.]
 
 **Example:**
 ```
@@ -112,30 +108,23 @@ Maximum: 15
 ### Edge Cases Considered
 
 [List any edge cases you thought about or tested:]
-- Example: What happens with very large numbers in Collatz?
-- Example: How does the prime checker handle 2?
-- Example: What if user enters only one number in statistics?
+- What happens if the user enters 1 immediately?
+- Example: What if the user enters -1 as the very first input?
 
 ---
 
 ## Challenges and Solutions
 
-### Challenge 1: [Describe a challenge you faced]
-**Solution:** [How you solved it]
-
-### Challenge 2: [Describe another challenge]
-**Solution:** [How you solved it]
-
-[Add more if needed]
-
+### Challenge 1: Aligning the Multiplication Table Grid]
+**Solution:** [I used Python's f-string formatting with a width specifier (f"{product:4}"). This forces every number to occupy exactly four characters of space, ensuring that the columns align perfectly regardless of how many digits the number has.](AI helped me with this problem)
 ---
 
 ## Key Learnings
 
 [Reflect on what you learned from this assignment:]
-- What did you learn about choosing the right loop type?
-- What was the most challenging part?
-- How did this assignment improve your programming skills?
+- Aligning the Multiplication Table Grid, using the the f string for that, is one thing i learned 
+- What was the most challenging part?- for me it was just making sure the logic made sence and the code would actually run and the indenting, cause it still trips me up at times.
+- How did this assignment improve your programming skills? It made me aware of my weaknesses and made me more confident in loops. and git too, its still a process to get git to work how I want it.
 
 ---
 
@@ -143,14 +132,11 @@ Maximum: 15
 
 [Choose one:]
 
-**Option A - No AI Used:**
-No AI assistance was used in completing this assignment. All code and logic were developed independently through problem-solving and reference to course materials.
-
 **Option B - AI Used (be specific):**
 AI assistance was used for the following:
 
 1. **[Specific concept]:**  
-   - What you asked: [The question or prompt]
+   - What you asked: [How to get my table alligned, how it needs to be. I pasted my code, and what the instructions said needed to be done to pass the test case]
    - What you learned: [What the AI helped clarify]
    - How you used it: [How you applied this to your code]
 
@@ -170,5 +156,5 @@ This assignment was developed incrementally with meaningful commits:
 
 **Declaration:** I certify that this assignment is my own work and I have not copied code from other students or unauthorized sources. Any AI assistance used has been properly documented above.
 
-**Signature:** [Your Name]  
-**Date:** [Date]
+**Signature:** [Nyasha Chimombe]  
+**Date:** [2/20/2026]
