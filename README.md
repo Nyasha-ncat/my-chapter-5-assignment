@@ -137,13 +137,13 @@ AI assistance was used for the following:
 
 1. **[Specific concept]:**  
    - What you asked: [How to get my table alligned, how it needs to be. I pasted my code, and what the instructions said needed to be done to pass the test case]
-   - What you learned: [What the AI helped clarify]
-   - How you used it: [How you applied this to your code]
+   - What you learned: [i learned how to allocate 4 spaces  ]
+   - How you used it: [It honestly taught me how to do it, cause i could not figure it out for the life of me.]
 
-2. **[Another specific concept]:**  
-   - What you asked: [The question or prompt]
-   - What you learned: [What the AI helped clarify]
-   - How you used it: [How you applied this to your code]
+2. **[statistical dashboard ]:**  
+   - What you asked: [what am i supposed to do here/ how do i initilize ]
+   - What you learned: [i had forgotten about inizilizing for a second, but once i was shown what exactly i was doing, , I was okay]
+   - How you used it: [Used  it as aguide ]
 
 **All core logic and implementation were developed independently after understanding the concepts.**
 
