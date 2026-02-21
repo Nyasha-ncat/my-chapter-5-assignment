@@ -80,3 +80,65 @@ for row in range(1, 11):
     print()
 
 print() 
+
+# Statistics Dashboard
+print("=== Statistics Dashboard ===")
+print("Enter positive numbers (enter -1 to finish):")
+
+# Initialize variables for tracking statistics
+numbers_list = []
+total_sum = 0
+count = 0
+minimum = None
+maximum = None
+
+# Part A: Data Collection (While Loop)
+# Use a while loop because we don't know how many numbers the user will enter
+while True:
+    user_input = int(input("Enter number: "))
+    
+    # Check for the sentinel value to break the loop
+    if user_input == -1:
+        break
+    
+    # Process valid positive numbers
+    numbers_list.append(user_input)
+    total_sum += user_input
+    count += 1
+    
+    if count == 1:
+        minimum = user_input
+        maximum = user_input
+    else:
+        if user_input < minimum:
+            minimum = user_input
+        if user_input > maximum:
+            maximum = user_input
+
+#  Statistics Display
+if count > 0:
+    average = total_sum / count
+    
+    print("\n=== Statistics ===")
+    print(f"Count: {count} numbers")
+    print(f"Sum: {total_sum}")
+    # Show average with one decimal place using :.1f
+    print(f"Average: {average:.1f}")
+    print(f"Minimum: {minimum}")
+    print(f"Maximum: {maximum}")
+
+    # Part C: Bar Chart (Nested Loops)
+    print("\n=== Bar Chart ===")
+    # The outer loop goes through each number stored in our list
+    for num in numbers_list:
+        # Display the number with spacing
+        print(f"{num:2}: ", end="")
+        
+        # The inner loop prints asterisks equal to the value of the number
+        for i in range(num):
+            print("*", end="")
+        
+        # Move to the next line after the inner loop finishes the stars
+        print()
+else:
+    print("No numbers were entered.")
